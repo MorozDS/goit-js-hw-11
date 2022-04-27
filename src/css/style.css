@@ -1,0 +1,83 @@
+.is-hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.search-form {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgb(30, 15, 188);
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+
+input {
+    width: 300px;
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+button {
+    outline: none;
+}
+
+.load-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gallery {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 15px;
+    flex-basis: calc((100% - 6 * 15px) / 3);
+
+}
+    
+.info {
+    padding: 20px 24px;
+    border-bottom: 2px solid #eeeeee;
+    border-left: 2px solid #eeeeee;
+    border-right: 2px solid #eeeeee;
+    flex-grow: 1;
+    
+}
+
+
+
