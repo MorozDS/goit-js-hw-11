@@ -11,23 +11,23 @@ async function getImage(name) {
         orientation: 'horizontal',
         safesearch: true,
         page: page,
-        per_page: 3,
+        per_page: 40,
     })
-    
+
     return await fetch(`${BASE_URL}?${searchParams}`).then(response => {
 
         if (!response.ok) {
-    
-    
-    throw new Error(response.status);
+
+
+            throw new Error(response.status);
         }
-        
+
         refs.loadMoreBtn.classList.remove('is-hidden');
-        
+
         return response.json();
 
     })
-       
+
 }
 
 export { getImage };
