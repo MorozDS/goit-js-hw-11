@@ -11,14 +11,14 @@ async function getImage(name) {
         orientation: 'horizontal',
         safesearch: true,
         page: page,
-        per_page: 40,
+        per_page: 3,
     })
     
     return await fetch(`${BASE_URL}?${searchParams}`).then(response => {
 
         if (!response.ok) {
-    refs.loadMoreBtn.classList.add('is-hidden');
-    Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.")
+    
+    
     throw new Error(response.status);
         }
         

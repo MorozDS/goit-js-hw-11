@@ -1,7 +1,7 @@
 import './css/style.css';
 import { getImage } from './js/api-service';
 import { renderPicture } from './js/render';
-
+import Notiflix from 'notiflix';
 
  const refs = {
     form: document.querySelector('#search-form'),
@@ -29,10 +29,17 @@ function onSubmit(e) {
         return;
     };
 
-    refs.gallery.innerHTML = "";
+    try {
+refs.gallery.innerHTML = "";
 
     getImage(inputValue).then(renderPicture)
 
+    } catch (error) { 
+         Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.")
+
+    }
+
+    
 }
 
 //=====load more кнопка =======
