@@ -37,10 +37,10 @@ refs.gallery.innerHTML = "";
     } catch (error) { 
          Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.")
 
-    }
+    };
 
     
-}
+};
 
 //=====load more кнопка =======
 
@@ -50,7 +50,7 @@ function onLoadMore() {
     getImage(refs.input.value).then(renderPicture)
     
    
-}
+};
 
 
 export { refs };
