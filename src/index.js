@@ -21,7 +21,7 @@ let page = 1;
 //====== кнопка submit===========
 function onSubmit(e) {
     e.preventDefault();
-    
+    page = 1;
     const inputValue = refs.input.value.trim();
     
   if (inputValue === '') {
@@ -53,5 +53,9 @@ function onLoadMore() {
 };
 
 
+
+
 export { refs };
 export { page };
+
+

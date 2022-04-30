@@ -30,4 +30,13 @@ async function getImage(name) {
 
 }
 
+
+
+
+
+
+
+
 export { getImage };
+
+
